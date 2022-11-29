@@ -1,16 +1,12 @@
-let img;
-
-function preload(){
-  img = loadImage("giant woman.jpg");
-}
+let mgr;
 
 function setup() {
-  createCanvas(1280, 657);
+    createCanvas(1280,657);
+    mgr = new SceneManager();
+    mgr.wire();
+    mgr.showScene(giantwoman);
 }
 
-
-function draw() {
-  background(color (125, 0, 0));
-  
-  image(img, 450, 40);
+function draw(){
+mgr.draw();
 }
