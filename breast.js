@@ -1,8 +1,8 @@
 function breast(){ 
   let breast;
 
-  this.setup = function() {
-    breast = loadImage ("card2.jpg");
+  this.enter = function() {
+    breast = loadImage ("breast.jpg");
   }
 
   this.draw = function() {

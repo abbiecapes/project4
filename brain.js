@@ -1,7 +1,7 @@
 function brain() {  
   let brain;
 
-  this.setup = function()  {
+  this.enter = function()  {
     brain = loadImage ("card1.jpg");
   }
 

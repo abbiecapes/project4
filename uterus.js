@@ -1,18 +1,19 @@
 function uterus(){  
   let uterus;
 
-  this.setup = function() {
-
+  this.enter = function() {
+    background(100,0,0)
     uterusimage = loadImage("uterus.jpg");
   }
 
 
   this.draw = function() {
-  image(uterus.jpg);
+    image("uterus.jpg", 0, 0);
+ 
   }
 
   this.mouseClicked = function() {
-    if (dist(mouseX,mouseY,width/2,height/2) < circleSize/2) { 
+     { 
       this.sceneManager.showScene(brain);  
     }
   }
